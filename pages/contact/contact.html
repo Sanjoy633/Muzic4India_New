@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-navbar color="yellow-darken-3">
+    <ion-title ><span ><img height="80px" width="100%" src="assets/img/muzic4india.png" class="img-custom"></span></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+
+<ion-content>
+  <h3>&nbsp; Contact Us</h3>
+  <form  class="test" [formGroup]="contactForm">
+    
+  <ion-list>
+
+  <ion-item class="test">
+    <ion-label floating ><ion-icon name="contact"></ion-icon>&nbsp;Name</ion-label>
+    <ion-input type="text" formControlName="name"></ion-input>
+  </ion-item>
+
+  <ion-item class="test">
+    <ion-label floating ><ion-icon name="mail"></ion-icon>&nbsp;Email</ion-label>
+    <ion-input type="email" formControlName="email"></ion-input>
+  </ion-item>
+
+<ion-item class="test">
+    <ion-label floating ><ion-icon name="call"></ion-icon>&nbsp;Phone</ion-label>
+    <ion-input type="number" formControlName="phone"></ion-input>
+  </ion-item>
+
+  <ion-item class="test">
+    <ion-label floating ><ion-icon name="card"></ion-icon>&nbsp;Subject</ion-label>
+    <ion-input type="text" formControlName="subject"></ion-input>
+  </ion-item>
+
+  <ion-item class="test">
+    <ion-label floating ><ion-icon name="list-box"></ion-icon>&nbsp;Message</ion-label>
+    <ion-textarea row="6" formControlName="message"></ion-textarea>
+  </ion-item>
+<span *ngIf="submitAttempt" style="color: #ea6153;"> &nbsp;Please fill out all details accurately.</span>
+<ion-item class="test">
+    <button type="submit" ion-button outline icon-left default color="pink-darken-1-1" (click)="save()">
+    <ion-icon name="send"></ion-icon>  
+      Send
+</button>
+  </ion-item>
+</ion-list>
+ 
+ 
+
+  </form>
+
+  <ion-card>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.2585300042515!2d88.35055505011351!3d22.56943203870295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277a5d9dfa303%3A0x5e4c62d88af27813!2sSivam+Suitings!5e0!3m2!1sen!2sin!4v1448565811769" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+ 
+
+
+  <ion-item>
+    
+    <ion-icon name="musical-notes" item-left large ></ion-icon>
+    <h2>Muzic4India</h2>
+ <h3>Regd. Office: </h3>
+    <h3>Spicy Entertainment and Media Limited</h3>
+    <h4>HMP House<br>
+4, Fairlie Place, <br>
+4th floor, R.No.408,<br>
+Kolkata - 700001, India</h4>
+  </ion-item>
+
+ <ion-item>
+     <ion-icon name="call" item-left ></ion-icon>
+    <h2>+91 9830138136</h2>
+ </ion-item>
+  <ion-item>
+     <ion-icon name="mail" item-left ></ion-icon>
+    <h2>contest@muzic4india.com</h2>
+ </ion-item>
+  <ion-item>
+     <ion-icon name="globe" item-left ></ion-icon>
+    <h2>http://www.Muzic4India.com</h2>
+ </ion-item>
+
+</ion-card>
+</ion-content>

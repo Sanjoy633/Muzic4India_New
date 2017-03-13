@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar color="yellow-darken-3">
+    <ion-title ><span ><img height="80px" width="100%" src="assets/img/muzic4india.png" class="img-custom"></span></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+<!--<ion-slides pager  #mySliderFirst initialSlide="0" autoplay="3000" loop="true"
+              (ionSlideDidChange)="onSlideChanged()"
+              (ionSlideDrag)="onSlideMove($event)"  >
+    <ion-slide *ngFor="let slide of slides" class="custom-margin">
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button color="primary" (click)="goToNextSlide()">Skip</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <img [src]="slide.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+   
+</ion-slides>-->
+<ion-slides   #mySliderFirst initialSlide="0"
+              (ionSlideDidChange)="onSlideChanged()"
+              (ionSlideDrag)="onSlideMove($event)">
+    <ion-slide *ngFor="let slide of slides">
+         <!--<ion-toolbar>
+     <ion-buttons end>
+          <button ion-button color="primary" (click)="goToNextSlide()">Skip</button>
+        </ion-buttons>
+      </ion-toolbar>-->
+      <img [src]="slide.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+   <!-- <ion-slide>
+      <ion-toolbar>
+      </ion-toolbar>
+      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>
+      <h2 class="slide-title">Ready to Play?</h2>
+      <button ion-button large clear icon-right color="primary" (click)="goToMainPage()">
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>-->
+</ion-slides>
+ 
+
+  <ion-card>
+  <ion-card-header>
+    <h2>About Muzic4India</h2>
+  </ion-card-header>
+  <ion-card-content>
+   A unique concept of finding new talent in Hindi & Bengali singing and nurturing them to place before the world audience.
+    The show is conceptualized by Mr. Mahesh Jalan and produced by well known production house M/s. Spicy Entertainment and Media Limited. This show will not only find e new talents in singing from Bengal but also help them to showcase their talent by different mediums.
+  </ion-card-content>
+</ion-card>
+</ion-content>
